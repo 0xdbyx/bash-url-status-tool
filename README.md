@@ -6,7 +6,7 @@ Supports custom User-Agent, optional SSL certificate validation ignore, and foll
 ## Features
 
 - Check both HTTP and HTTPS for each URL
-- Custom User-Agent options: `mobile`, `desktop`, or a custom string
+- Custom User-Agent options: `mobile`, `desktop`, or a `custom` string
 - Optional SSL ignore (`-k`) for sites with invalid certificates
 - Follows redirects and records the final URL
 - Outputs results in CSV format with:
@@ -32,3 +32,16 @@ Supports custom User-Agent, optional SSL certificate validation ignore, and foll
 
 # Ignore SSL certificate errors
 ./urlstatustool.sh -k
+```
+
+## CSV Input Format
+
+url
+example.com
+http://test.com/path
+https://example.com
+
+## CSV Output Format
+
+input,http_status,http_code,http_final_url,https_status,https_code,https_final_url
+example.com,UP,000,http://example.com,UP,200,https://example.com
