@@ -1,6 +1,7 @@
 # Bash URL Status Tool
 
 A Bash script to check the HTTP and HTTPS status of a list of URLs using `curl`.  
+
 Supports custom User-Agent, optional SSL certificate validation ignore, and follows redirects. Outputs results in a CSV file.
 
 ## Features
