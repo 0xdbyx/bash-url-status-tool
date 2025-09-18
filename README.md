@@ -36,12 +36,16 @@ Supports custom User-Agent, optional SSL certificate validation ignore, and foll
 
 ## CSV Input Format
 
+```csv
 url
 example.com
 http://test.com/path
 https://example.com
+```
 
 ## CSV Output Format
 
+```csv
 input,http_status,http_code,http_final_url,https_status,https_code,https_final_url
 example.com,UP,000,http://example.com,UP,200,https://example.com
+```
